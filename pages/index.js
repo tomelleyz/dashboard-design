@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
       <main>
         <Layout>
           <motion.div
-            initial={{ opacity: 0, y: -4 }}
+            initial={{ opacity: 0, y: -5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "tween" }}
           >
@@ -37,6 +38,15 @@ export default function Home() {
               <div className="group flex min-h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
                 <p>24 Aug - 01 Sep 21</p>
 
+                <div className="relative h-[69px] w-[201px]">
+                  <Image
+                    src="/chart-1.png"
+                    alt=""
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+
                 <div>
                   <p className="mb-[5px]">This week</p>
                   <span className="font-general-sans text-xl font-medium">
@@ -47,6 +57,15 @@ export default function Home() {
               <div className="group flex min-h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
                 <p>24 Aug - 01 Sep 21</p>
 
+                <div className="relative h-[78px] w-[210px]">
+                  <Image
+                    src="/chart-2.png"
+                    alt=""
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+
                 <div>
                   <p className="mb-[5px]">This month</p>
                   <span className="font-general-sans text-xl font-medium">
@@ -56,6 +75,15 @@ export default function Home() {
               </div>
               <div className="group flex min-h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
                 <p>24 Aug - 01 Sep 21</p>
+
+                <div className="relative h-[74px] w-[209px]">
+                  <Image
+                    src="/chart-3.png"
+                    alt=""
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
 
                 <div>
                   <p className="mb-[5px]">Last month</p>
@@ -122,7 +150,16 @@ export default function Home() {
                   <span>Download</span>
                 </button>
 
-                <div className="min-h-[284px] w-full rounded-lg border border-solid border-black-500"></div>
+                <div className="min-h-[284px] w-full rounded-lg border border-solid border-black-500">
+                  <div className="relative mx-auto h-[162px] w-[647px]">
+                    <Image
+                      src="/chart-4.png"
+                      alt=""
+                      fill
+                      className="object-cover object-center"
+                    />
+                  </div>
+                </div>
               </div>
 
               <div className="flex min-h-[284px] w-full flex-col items-center justify-between rounded-lg bg-pink-500 bg-[url('/lines.png')] bg-cover bg-center bg-no-repeat p-6 text-center text-white md:w-[304px] md:items-start md:text-left">
