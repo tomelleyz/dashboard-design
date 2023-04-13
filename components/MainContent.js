@@ -4,7 +4,7 @@ import NavigationPanelMobile from "./navigation/NavigationPanelMobile";
 
 export default function MainContent({ children }) {
   return (
-    <section className="relative h-full w-full bg-white">
+    <section className="relative h-full w-full flex-col overflow-x-hidden bg-white">
       <header className="sticky top-0 z-20 flex justify-between border-b border-solid border-grey-500 bg-white px-4 py-[18px] lg:justify-end lg:px-8">
         <Link href="/" className="block lg:hidden">
           <Image
