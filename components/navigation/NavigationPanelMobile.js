@@ -28,7 +28,7 @@ export default function NavigationPanelMobile() {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 top-[73px] z-10 overflow-y-auto bg-pink-400">
-          <Dialog.Content className="inset-0 top-[73px] bg-pink-400 px-4 pb-16 data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn lg:px-8">
+          <Dialog.Content className="relative bg-pink-400 px-4 pb-16 data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn lg:px-8">
             <Dialog.Title className="sr-only">Menu</Dialog.Title>
             <Dialog.Description className="sr-only">
               Menu links to navigate dashboard
