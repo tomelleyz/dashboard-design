@@ -43,6 +43,22 @@ module.exports = {
       inter: ["Inter", "sans-serif"],
       "general-sans": ["General-Sans", "sans-serif"],
     },
+    extend: {
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        fadeOut: {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 300ms cubic-bezier(0.16, 1, 0.3, 1)",
+        fadeOut: "fadeOut 300ms cubic-bezier(0.16, 1, 0.3, 1)",
+      },
+    },
   },
   plugins: [],
 };

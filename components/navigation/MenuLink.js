@@ -20,6 +20,7 @@ export default function MenuLink({
     >
       {children}
       <motion.span
+        initial={false}
         animate={
           isNavigationPanelExpanded ? fadeInAndShowWithDelay : fadeOutAndHide
         }

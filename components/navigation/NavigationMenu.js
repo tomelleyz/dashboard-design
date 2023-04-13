@@ -16,9 +16,10 @@ export default function NavigationMenu({
   return (
     <>
       <motion.div
+        initial={false}
         animate={isNavigationPanelExpanded ? fadeInWithDelay : fadeOut}
       >
-        <Link href="/" className="relative block h-[26px] w-[84px]">
+        <Link href="/" className="relative hidden h-[26px] w-[84px] lg:block">
           <Image
             src="/klasha-word-logo.svg"
             alt="Klasha logo"
@@ -31,6 +32,7 @@ export default function NavigationMenu({
       <nav className="mb-[146px] mt-[50px] space-y-8">
         <div className="space-y-4">
           <motion.h1
+            initial={false}
             animate={isNavigationPanelExpanded ? fadeInWithDelay : fadeOut}
             className="whitespace-nowrap font-general-sans text-base font-medium text-black-400"
           >
@@ -232,6 +234,7 @@ export default function NavigationMenu({
 
         <div className="space-y-4">
           <motion.h1
+            initial={false}
             animate={isNavigationPanelExpanded ? fadeInWithDelay : fadeOut}
             className="whitespace-nowrap font-general-sans text-base font-medium text-black-400"
           >
@@ -336,6 +339,7 @@ export default function NavigationMenu({
 
       <div className="space-y-3.5">
         <motion.div
+          initial={false}
           animate={{
             width: isNavigationPanelExpanded ? "120px" : "44px",
           }}
@@ -370,6 +374,7 @@ export default function NavigationMenu({
             </svg>
             <motion.span
               className="shrink-0"
+              initial={false}
               animate={
                 isNavigationPanelExpanded
                   ? fadeInAndShowWithDelay
@@ -382,6 +387,7 @@ export default function NavigationMenu({
         </motion.div>
 
         <motion.button
+          initial={false}
           animate={{
             width: isNavigationPanelExpanded ? "120px" : "50px",
           }}
@@ -412,6 +418,7 @@ export default function NavigationMenu({
 
           <motion.span
             className="shrink-0"
+            initial={false}
             animate={
               isNavigationPanelExpanded
                 ? fadeInAndShowWithDelay

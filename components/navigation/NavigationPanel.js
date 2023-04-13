@@ -8,7 +8,8 @@ export default function NavigationPanel() {
 
   return (
     <motion.section
-      className="sticky top-0 flex h-full flex-col overflow-y-auto bg-pink-400 transition-all duration-300"
+      className="sticky top-0 hidden h-full flex-col overflow-y-auto overflow-x-hidden bg-pink-400 transition-all duration-300 lg:flex"
+      initial={false}
       animate={{
         width: isNavigationPanelExpanded ? "280px" : "114px",
         padding: isNavigationPanelExpanded
