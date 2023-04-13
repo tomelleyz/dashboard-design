@@ -1,11 +1,11 @@
 import MainContent from "./MainContent";
 import NavigationPanel from "./navigation/NavigationPanel";
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
     <div className="relative flex h-screen overflow-hidden">
       <NavigationPanel />
-      <MainContent />
+      <MainContent>{children}</MainContent>
     </div>
   );
 }
