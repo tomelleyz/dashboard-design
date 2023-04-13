@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -6,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Klasha | Dashboard</title>
+        <title>Dashboard | Home</title>
         <meta name="description" content="Klasha dashboard" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ef2c5a"></meta>
@@ -15,7 +16,11 @@ export default function Home() {
 
       <main>
         <Layout>
-          <div className="">
+          <motion.div
+            initial={{ opacity: 0, y: -4 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "tween" }}
+          >
             <h1 className="mb-6 font-general-sans text-xl font-medium text-black-900">
               Sales overview
             </h1>
@@ -132,7 +137,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </Layout>
       </main>
     </>
