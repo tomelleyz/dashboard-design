@@ -28,13 +28,13 @@ export default function NavigationPanelMobile() {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 top-[73px] z-10 overflow-y-auto bg-pink-400">
-          <Dialog.Content className="relative bg-pink-400 px-4 pb-16 data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn lg:px-8">
+          <Dialog.Content className="relative w-full bg-pink-400 px-4 pb-16 data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn lg:px-8">
             <Dialog.Title className="sr-only">Menu</Dialog.Title>
             <Dialog.Description className="sr-only">
               Menu links to navigate dashboard
             </Dialog.Description>
             <nav>
-              <div className="mb-[146px] mt-[50px] space-y-8">
+              <div className="space-y-8 pb-[146px] pt-[50px]">
                 <div className="space-y-4">
                   <h1 className="font-general-sans text-base font-medium text-black-400">
                     Main pages
