@@ -75,7 +75,7 @@ export default function NavigationPanelMobile() {
                     </svg>
                   </MenuLinkMobile>
 
-                  <MenuLinkMobile href="/" title="Balances">
+                  <MenuLinkMobile href="#" title="Balances">
                     <svg
                       width="24"
                       height="24"
@@ -121,7 +121,7 @@ export default function NavigationPanelMobile() {
                     </svg>
                   </MenuLinkMobile>
 
-                  <MenuLinkMobile href="/" title="Analytics">
+                  <MenuLinkMobile href="#" title="Analytics">
                     <svg
                       width="24"
                       height="24"
@@ -160,7 +160,7 @@ export default function NavigationPanelMobile() {
                     </svg>
                   </MenuLinkMobile>
 
-                  <MenuLinkMobile href="/" title="Marketing">
+                  <MenuLinkMobile href="#" title="Marketing">
                     <svg
                       width="24"
                       height="24"
@@ -184,7 +184,7 @@ export default function NavigationPanelMobile() {
                     </svg>
                   </MenuLinkMobile>
 
-                  <MenuLinkMobile href="/" title="Exchange rates">
+                  <MenuLinkMobile href="#" title="Exchange rates">
                     <svg
                       width="24"
                       height="24"
@@ -213,7 +213,7 @@ export default function NavigationPanelMobile() {
                   <h1 className="font-general-sans text-base font-medium text-black-400">
                     Accept payments
                   </h1>
-                  <MenuLinkMobile href="/" title="Checkout">
+                  <MenuLinkMobile href="#" title="Checkout">
                     <svg
                       width="24"
                       height="24"
@@ -239,7 +239,7 @@ export default function NavigationPanelMobile() {
                     </svg>
                   </MenuLinkMobile>
 
-                  <MenuLinkMobile href="/" title="Payment Links">
+                  <MenuLinkMobile href="#" title="Payment Links">
                     <svg
                       width="24"
                       height="24"
@@ -269,7 +269,7 @@ export default function NavigationPanelMobile() {
                     Send payments
                   </h1>
 
-                  <MenuLinkMobile href="/" title="Wire">
+                  <MenuLinkMobile href="#" title="Wire">
                     <svg
                       width="24"
                       height="24"
@@ -297,7 +297,7 @@ export default function NavigationPanelMobile() {
 
               <div className="space-y-3.5">
                 <Link
-                  href="/"
+                  href="#"
                   className="inline-flex items-center gap-x-4 rounded-full bg-pink-500 py-2 pl-2.5 pr-6 text-xs font-semibold text-white"
                 >
                   <svg

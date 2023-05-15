@@ -1,8 +1,18 @@
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+
+const SalesOverviewChart1 = dynamic(
+  () => import("@/components/charts/SalesOverviewChart1"),
+  { ssr: false }
+);
+
+const SalesChart = dynamic(() => import("@/components/charts/SalesChart"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -27,7 +37,7 @@ export default function Home() {
             </h1>
 
             <div className="flex flex-col flex-wrap gap-6 md:flex-row">
-              <div className="group flex min-h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
+              <div className="group flex h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
                 <div>
                   <p className="mb-[5px]">Today&apos;s sales</p>
                   <span className="font-general-sans text-xl font-medium">
@@ -35,16 +45,11 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="group flex min-h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
+              <div className="group flex h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
                 <p>24 Aug - 01 Sep 21</p>
 
-                <div className="relative h-[69px] w-full">
-                  <Image
-                    src="/chart-1.png"
-                    alt=""
-                    fill
-                    className="object-scale-down object-center"
-                  />
+                <div className="h-[78px] w-full">
+                  <SalesOverviewChart1 />
                 </div>
 
                 <div>
@@ -54,16 +59,11 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="group flex min-h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
+              <div className="group flex h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
                 <p>24 Aug - 01 Sep 21</p>
 
-                <div className="relative h-[78px] w-full">
-                  <Image
-                    src="/chart-2.png"
-                    alt=""
-                    fill
-                    className="object-scale-down object-center"
-                  />
+                <div className="h-[78px] w-full">
+                  <SalesOverviewChart1 />
                 </div>
 
                 <div>
@@ -73,16 +73,11 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="group flex min-h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
+              <div className="group flex h-[240px] w-full flex-col justify-between rounded-lg border border-solid border-black-950 bg-white p-6 text-sm text-black-950 transition-colors duration-300 hover:bg-black-950 hover:text-white md:w-[calc(50%_-_12px)] lg:w-[calc(33.333333%_-_16px)] xl:w-[calc(25%_-_18px)]">
                 <p>24 Aug - 01 Sep 21</p>
 
-                <div className="relative h-[74px] w-full">
-                  <Image
-                    src="/chart-3.png"
-                    alt=""
-                    fill
-                    className="object-scale-down object-center"
-                  />
+                <div className="h-[78px] w-full">
+                  <SalesOverviewChart1 />
                 </div>
 
                 <div>
@@ -95,7 +90,7 @@ export default function Home() {
             </div>
 
             <div className="mt-[42px] flex flex-col gap-6 lg:flex-row lg:items-end">
-              <div className="flex grow flex-wrap items-end justify-between gap-x-2.5 gap-y-0.5">
+              <div className="flex flex-wrap items-end justify-between gap-x-2.5 gap-y-0.5 lg:w-[calc(100%_-_(304px_+_24px))]">
                 <div className="flex grow flex-wrap items-baseline gap-2.5">
                   <h1 className="font-general-sans text-xl font-medium text-black-900">
                     Sales
@@ -150,19 +145,14 @@ export default function Home() {
                   <span>Download</span>
                 </button>
 
-                <div className="min-h-[284px] w-full rounded-lg border border-solid border-black-500">
-                  <div className="relative mx-auto h-[162px] w-full">
-                    <Image
-                      src="/chart-4.png"
-                      alt=""
-                      fill
-                      className="object-scale-down object-center"
-                    />
+                <div className="h-[284px] w-full rounded-lg border border-solid border-black-500">
+                  <div className="h-full w-full px-2 py-4 xl:p-8">
+                    <SalesChart />
                   </div>
                 </div>
               </div>
 
-              <div className="flex min-h-[284px] w-full shrink-0 flex-col items-center justify-between rounded-lg bg-pink-500 bg-[url('/lines.png')] bg-cover bg-center bg-no-repeat p-6 text-center text-white md:w-[304px] md:items-start md:text-left">
+              <div className="flex h-[284px] w-full shrink-0 flex-col items-center justify-between rounded-lg bg-pink-500 bg-[url('/lines.png')] bg-cover bg-center bg-no-repeat p-6 text-center text-white md:w-[304px] md:items-start md:text-left">
                 <h2 className="max-w-[192px] font-general-sans text-xl font-medium">
                   KlashaWire - send money to businesses globally from Africa
                 </h2>

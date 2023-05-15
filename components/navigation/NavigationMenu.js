@@ -79,7 +79,7 @@ export default function NavigationMenu({
           </MenuLink>
 
           <MenuLink
-            href="/"
+            href="#"
             title="Balances"
             isNavigationPanelExpanded={isNavigationPanelExpanded}
           >
@@ -133,7 +133,7 @@ export default function NavigationMenu({
           </MenuLink>
 
           <MenuLink
-            href="/"
+            href="#"
             title="Analytics"
             isNavigationPanelExpanded={isNavigationPanelExpanded}
           >
@@ -176,7 +176,7 @@ export default function NavigationMenu({
           </MenuLink>
 
           <MenuLink
-            href="/"
+            href="#"
             title="Marketing"
             isNavigationPanelExpanded={isNavigationPanelExpanded}
           >
@@ -204,7 +204,7 @@ export default function NavigationMenu({
           </MenuLink>
 
           <MenuLink
-            href="/"
+            href="#"
             title="Exchange rates"
             isNavigationPanelExpanded={isNavigationPanelExpanded}
           >
@@ -241,7 +241,7 @@ export default function NavigationMenu({
             Accept payments
           </motion.h1>
           <MenuLink
-            href="/"
+            href="#"
             title="Checkout"
             isNavigationPanelExpanded={isNavigationPanelExpanded}
           >
@@ -271,7 +271,7 @@ export default function NavigationMenu({
           </MenuLink>
 
           <MenuLink
-            href="/"
+            href="#"
             title="Payment Links"
             isNavigationPanelExpanded={isNavigationPanelExpanded}
           >
@@ -308,7 +308,7 @@ export default function NavigationMenu({
           </motion.h1>
 
           <MenuLink
-            href="/"
+            href="#"
             title="Wire"
             isNavigationPanelExpanded={isNavigationPanelExpanded}
           >
@@ -337,7 +337,7 @@ export default function NavigationMenu({
         </div>
       </nav>
 
-      <div className="space-y-3.5">
+      <div className="sticky bottom-0 space-y-3.5">
         <motion.div
           initial={false}
           animate={{
@@ -345,7 +345,7 @@ export default function NavigationMenu({
           }}
         >
           <Link
-            href="/"
+            href="#"
             aria-label="Support"
             title={isNavigationPanelExpanded ? "" : "Support"}
             className={`flex items-center gap-x-4 rounded-full bg-pink-500 px-2.5 py-2 text-xs font-semibold text-white`}

@@ -77,7 +77,7 @@ export default function MainContent({ children }) {
           </div>
         </div>
       </header>
-      <div className="h-full overflow-y-auto overflow-x-hidden px-4 pb-40 pt-16 lg:px-8 lg:pt-[104px]">
+      <div className="h-full overflow-auto overscroll-contain px-4 pb-40 pt-16 lg:px-8 lg:pt-[104px]">
         {children}
       </div>
     </section>
